@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+body {
+  font-family: 'Hind', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+
+}
+
+.original__box {
+    width: 94%;
+    height: 25rem;
+    background-color: black;
+    margin:0 1rem 0 2rem ;
+    color: white;
+  
+}
+.original__box h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.original__slider .slick-slide>div>.Card {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+
+
+}
+.original__slider .slick-slide>div:hover {
+    transform: scale(1.1);
+    border-radius: 0.5rem;
+    transition: all 0.5s ease-in-out;
+
+}
+.original__slider .Card>img {
+    width: 98%;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+.original__slider .slick-prev:before,.original__slider .slick-next:before  {
+    font-size: 3rem!important;
+}
+
+.original__slider .slick-prev {
+    left: -43px!important;
+   color: #007aff;
+}
+

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+body {
+  font-family: 'Hind', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  background-color: #111111;
+
+}
+.frame_box > .Iframe {
+  border: none;
+  margin: 0!important;
+  padding: 0!important;
+  
+}
+.frame_box > .Iframe .vp-center {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.frame_text_box {
+  position: absolute;
+  width: 38rem;
+  height: 10rem;
+  top: 10rem;
+  left:5rem;
+  color: white;
+
+
+}
+.frame_text_box p {
+  font-size: 1.3rem;
+}
+.frame_text_box h1 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+.control__btn {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.control__btn button:first-child {
+  width: 8rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+.control__btn button:last-child {
+  width: 8rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  background-color: rgba(109, 109, 110, 0.7);
+  color: white;
+}
