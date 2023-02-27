@@ -20,7 +20,7 @@ body {
     height: 5rem;
     justify-content: space-between;
     padding: 0 1rem 0 2rem;
-    z-index: 1;
+    z-index: 999;
 
 }
 .sticky {

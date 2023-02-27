@@ -26,8 +26,7 @@ export const originalSlice = createSlice({
             state.originalImageurl = [...state.originalImageurl,`${urlImage}${item.poster_path}` ]
 
         })
-        console.log(" state.originalImage", state.originalImageurl)
-        // state.originalImage = action.payload.data.results.poster_path
+  
    
     },
 },

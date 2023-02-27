@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/footer/Footer'
 import Frame from '../components/frame/Frame'
 import SectionAction from '../components/section/SectionAction'
 import SectionComedy from '../components/section/SectionComedy'
@@ -15,14 +16,13 @@ const Home = () => {
     <Frame/>
     <SectionOriginal/>
     <SectionTrending/>
+    <SectionToprated/>
      <SectionAction/>
     <SectionComedy/>
-    <SectionDocumentary/>
-    <SectionToprated/>
     <SectionHorror/>
-    <SectionToprated/>
     <SectionRomance/>
-    </div>
+    <SectionDocumentary/>
+  </div>
   )
 }
 

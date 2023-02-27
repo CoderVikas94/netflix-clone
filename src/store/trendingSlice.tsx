@@ -26,8 +26,7 @@ export const trendingSlice = createSlice({
             state.trendingImageurl = [...state.trendingImageurl,`${urlImage}${item.poster_path}` ]
 
         })
-        console.log(" state.originalImage", state.trendingImageurl)
-        // state.originalImage = action.payload.data.results.poster_path
+       
    
     },
 },
