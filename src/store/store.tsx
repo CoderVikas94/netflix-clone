@@ -3,6 +3,7 @@ import actionSlice from './actionSlice'
 import comedySlice from './comedySlice'
 import documentarySlice from './documentarySlice'
 import horrorSlice from './horrorSlice'
+import movieSlice from './movieSlice'
 import originalSlice from './originalSlice'
 import romanceSlice from './romanceSlice'
 import topRatedSlice from './topRatedSlice'
@@ -18,6 +19,7 @@ export const store = configureStore({
     horror:horrorSlice,
     romance:romanceSlice,
     documentary:documentarySlice,
+    movie:movieSlice,
 
   },
 })

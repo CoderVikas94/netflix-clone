@@ -1,0 +1,86 @@
+
+
+.ant-modal.css-dev-only-do-not-override-1km3mtt.modal {
+width: 100%!important;
+padding: 0!important;
+
+}
+
+ .ant-modal .ant-modal-content {
+    border-radius: none!important;
+    padding: 0!important;
+
+}
+
+.movie__box {
+    width: 100%;
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+}
+.movie__box .text_box {
+    background: linear-gradient(90deg, #000 40%, transparent);
+    width: 70%;
+    padding-top: 3rem;
+    height: 100%;
+    padding-left: 5rem;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+.movie__box .text_box>h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.movie__box .text_box>span {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    gap: 0.5rem;
+}
+
+.movie__box .text_box>span p:nth-child(1){
+    color: #5cdf5c;
+}
+
+.movie__box .text_box>p{
+    font-size: 1.1rem;
+    width: 50%;
+    font-weight: 600;
+    color: #7a7a7a;
+    hyphens: auto;
+    line-height: 1.2;    
+}
+.modal_box_btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.modal_box_btn button:nth-child(1) {
+    background-color: #f80616de;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.2s;
+    width: 9rem;
+    height: 2.8rem;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 300;
+
+}
+.modal_box_btn button:nth-child(2) {
+    background-color: transparent;
+    color: #fff;
+    border: 0.5px solid #7a7a7a;
+    width: 9rem;
+    height: 2.8rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+
+}

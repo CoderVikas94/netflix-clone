@@ -36,11 +36,11 @@ const Header = () => {
         </ul>
      </div>
      <div className='user_box'>
-     <HiOutlineSearch/>
+     <HiOutlineSearch className='icon'/>
      <p>KIDS</p>
      <p>DVD</p>
-     <BsFillBellFill/>
-     <FaUserAlt/></div>
+     <BsFillBellFill className='icon'/>
+     <FaUserAlt className='icon'/></div>
     </div>
   )
 }

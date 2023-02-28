@@ -12,9 +12,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { setMovieData } from "../../store/movieSlice";
 
-const SectionOriginal = () => {
+const SectionOriginal = ({showModal}:any) => {
   const Dispatch = useDispatch();
+  const urlImage = "https://image.tmdb.org/t/p/original"
+
 
   useEffect(() => {
     axios
@@ -25,8 +28,19 @@ const SectionOriginal = () => {
   }, []);
 
   const imageData = useSelector(
-    (state: any) => state?.netflixOriginal?.originalImageurl
-  );
+    (state: any) => state?.netflixOriginal?.original
+);
+
+  
+ 
+    
+      const handleClick= (e:any)=>{
+    
+        Dispatch(setMovieData(e))
+       showModal();
+        }
+      
+  
 
   return (
     <div className="original__box">
@@ -37,21 +51,26 @@ const SectionOriginal = () => {
         spaceBetween={10}
         slidesPerView={5}
         navigation
-        pagination={{ clickable: true }}
+        swiper-onPaginationHide={4}
+        loop={true}
+        breakpoints={{769:{slidesPerView: 5,slidesPerGroup: 5,}}}
+         pagination={{clickable: true }}
         scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
         className="swiper"
       >
-        {imageData.map((itemUrl: any, index: any) => {
+        {imageData.map((item: any, index: any) => {
           return (
             <>
               <SwiperSlide className="Card" key={index}>
                 <img
-                  src={itemUrl}
+                  src={`${urlImage}${item?.poster_path}`}
                   alt="movies-poster"
                   className="swiper-image"
-                />
+                  onClick={()=>handleClick(item)}
+                  id={item.id}
+            />
               </SwiperSlide>
             </>
           );

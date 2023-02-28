@@ -7,12 +7,10 @@ import axios from 'axios';
 
 export interface OriginalState {
   original: any,
-  originalImageurl:any
 }
 
 const initialState: OriginalState = {
     original: [],
-    originalImageurl:[]
 }
 
 export const originalSlice = createSlice({
@@ -20,15 +18,9 @@ export const originalSlice = createSlice({
   initialState,
   reducers: {
     setOriginalData: (state,action) => {
-        const urlImage = "https://image.tmdb.org/t/p/original/"
         state.original = action.payload.data.results
-        action.payload.data.results.map((item:any)=>{
-            state.originalImageurl = [...state.originalImageurl,`${urlImage}${item.poster_path}` ]
-
-        })
-  
-   
-    },
+                    
+      },
 },
 })
 

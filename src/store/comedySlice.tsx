@@ -6,12 +6,10 @@ import {createSlice } from '@reduxjs/toolkit'
 
 export interface ComedyState {
   comedy: any,
-  comedyImageurl:any
 }
 
 const initialState: ComedyState = {
     comedy: [],
-    comedyImageurl:[]
 }
 
 export const comedySlice = createSlice({
@@ -19,12 +17,8 @@ export const comedySlice = createSlice({
   initialState,
   reducers: {
     setComedyData: (state,action) => {
-        const urlImage = "https://image.tmdb.org/t/p/original/"
         state.comedy = action.payload.data.results
-        action.payload.data.results.map((item:any)=>{
-            state.comedyImageurl = [...state.comedyImageurl,`${urlImage}${item.poster_path}` ]
-
-        })
+      
     },
 },
 })

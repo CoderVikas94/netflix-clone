@@ -10,18 +10,18 @@ import SectionRomance from '../components/section/SectionRomance'
 import SectionToprated from '../components/section/SectionToprated'
 import SectionTrending from '../components/section/SectionTrending'
 
-const Home = () => {
+const Home = ({showModal}:any) => {
   return (
     <div className='Home__box'>
     <Frame/>
-    <SectionOriginal/>
-    <SectionTrending/>
-    <SectionToprated/>
-     <SectionAction/>
-    <SectionComedy/>
-    <SectionHorror/>
-    <SectionRomance/>
-    <SectionDocumentary/>
+    <SectionOriginal showModal={showModal}/>
+    <SectionTrending showModal={showModal}/>
+    <SectionToprated showModal={showModal}/>
+     <SectionAction showModal={showModal}/>
+    <SectionComedy showModal={showModal}/>
+    <SectionHorror showModal={showModal}/>
+    <SectionRomance showModal={showModal}/>
+    <SectionDocumentary showModal={showModal}/>
   </div>
   )
 }

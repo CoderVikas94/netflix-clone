@@ -43,11 +43,22 @@ body {
     gap: 2rem;
     font-size: 1rem;
 } 
+.header_list_box>ul>li:hover {
+    cursor: pointer;
+    color: #a7a7a7;
+    transition: all 0.4s ease-in-out;
+}
 .user_box {
     flex-basis: 20%;
     display: flex;
     align-items: center;
     gap: 2rem;
     font-size: 1rem;
+
+}
+.user_box>p:hover,.user_box>.icon:hover{
+    cursor: pointer;
+    color: #a7a7a7;
+    transition: all 0.4s ease-in-out;
 
 }
