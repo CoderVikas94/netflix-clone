@@ -6,6 +6,7 @@ import horrorSlice from './horrorSlice'
 import movieSlice from './movieSlice'
 import originalSlice from './originalSlice'
 import romanceSlice from './romanceSlice'
+import searchSlice from './searchSlice'
 import topRatedSlice from './topRatedSlice'
 import trendingSlice from './trendingSlice'
 
@@ -20,6 +21,7 @@ export const store = configureStore({
     romance:romanceSlice,
     documentary:documentarySlice,
     movie:movieSlice,
+    search:searchSlice,
 
   },
 })

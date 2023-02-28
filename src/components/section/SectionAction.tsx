@@ -35,7 +35,6 @@ const SectionAction = ({showModal}:any) => {
          `https://api.themoviedb.org/3/movie/${e.id}?api_key=224ce27b38a3805ecf6f6c36eb3ba9d0`
            ).then((data: any) =>{
              Dispatch(setTrendingMovieData(data))
-             console.log("data",data)
  
            }
              ) ;
