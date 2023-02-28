@@ -2,6 +2,7 @@ import  './page.css'
 import { Modal } from 'antd';
 import { useSelector } from 'react-redux';
 import {AiOutlinePlus} from 'react-icons/ai'
+import {FaPlay} from 'react-icons/fa'
 
 const Page = ({open,hideModal}:any) => {
     const ImgData = useSelector(
@@ -22,7 +23,7 @@ let urlImage:any = `https://image.tmdb.org/t/p/original/${ImgData?.backdrop_path
         onOk={hideModal}
         onCancel={hideModal}
         footer={null}
-
+        closable ={false}
        className="modal"
       >
         <div className='movie__box' style={{backgroundImage:`url(${urlImage})`}}>
@@ -34,8 +35,8 @@ let urlImage:any = `https://image.tmdb.org/t/p/original/${ImgData?.backdrop_path
             </span>
             <p>{ImgData?.overview}</p>
             <div className='modal_box_btn'>
-                <button>PLAY</button>
-                <button><AiOutlinePlus/>MY LIST</button>
+                <button><FaPlay style={{fontSize:"1.2rem"}}/>PLAY</button>
+                <button><AiOutlinePlus  style={{fontSize:"1.2rem"}}/>MY LIST</button>
             </div>
             </div>
          

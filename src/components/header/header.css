@@ -70,7 +70,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     border: 0.1rem solid white;
-    transition: width 0.5s;
+    transition: linear 0.4s ease-in-out;
 
 }
 

@@ -33,20 +33,16 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
-.swiper  .Card:hover{
+.swiper-wrapper:hover> .Card:hover{
 transform: scale(1.15);
-border-radius: 0.8rem;
+border-radius: 1rem;
 transition: all 0.5s ease-in-out;
 z-index: 99999;
+opacity: 1;
 }
-/* .swiper  .Card:hover.swiper-slide {
-    opacity: 0.2;
-}  */
-.original__slider .swiper .Card:hover {
-    cursor: pointer;
-    box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.2);
-    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
-}
+.swiper-wrapper:hover>.Card:not(:hover) {
+    opacity: 0.5;
+  }
 
 .swiper-button-next:after, .swiper-button-prev:after {
     font-size: 3.5rem!important;
@@ -57,6 +53,7 @@ z-index: 99999;
 .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
     top: 0;
     height: 2%;
+    width: 98%;
     display: flex;
     justify-content: end;
   

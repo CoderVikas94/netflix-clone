@@ -50,6 +50,7 @@ body {
   justify-content: center;
   gap: 0.5rem;
   font-size: 1rem;
+  border: none;
 }
 .control__btn button:last-child {
   width: 8rem;
@@ -62,4 +63,10 @@ body {
   font-size: 1rem;
   background-color: rgba(109, 109, 110, 0.7);
   color: white;
+  border: none;
+
+
+}
+.mute_box {
+  position: absolute;
 }
